@@ -43,8 +43,11 @@ body {
     background-color: slategray;
 
 }
-.column2 {
+.column2,.column1,.column3 {
     background-color: brown;
+}
+.articleheader {
+    background-color: black;
 }
 
 @media screen and (min-width: 600px) {
@@ -60,8 +63,11 @@ body {
     }
     .article {
         display: grid;
-        grid-template-areas: "column column column";
+        grid-template-areas:
+        /* "articleheader articleheader articleheader"  */
+                            "column1 column2 column3";
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         align-content: end;
     }
     .header {
@@ -84,8 +90,19 @@ body {
         background-color: slategray;
         grid-area: footer;
     }
-    .column {
-        grid-area: column2;
-        background-color: brown;
+    .column1 {
+        grid-area: column1;
+        align-content: end;
     }
+        .column2 {
+        grid-area: column2;
+        align-content: end;
+    }
+        .column3 {
+        grid-area: column3;
+        align-content: end;
+    }
+    /* .articleheader {
+        grid-area: articleheader;
+    } */
 }
