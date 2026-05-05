@@ -48,9 +48,7 @@ body {
 .column2,.column1,.column3 {
     background-color: brown;
 }
-/* .articleheader {
-    background-color: black;
-} */
+
 
 @media screen and (min-width: 600px) {
     .container {
@@ -61,12 +59,12 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 2fr 1fr;
         min-height: 100vh;
-        /* width: 100vh; */
+
     }
     .article {
         display: grid;
         grid-template-areas:
-        /* "articleheader articleheader articleheader"  */
+        /* "" */
                             "column1 column2 column3";
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -104,7 +102,4 @@ body {
         grid-area: column3;
         align-content: end;
     }
-    /* .articleheader {
-        grid-area: articleheader;
-    } */
 }
